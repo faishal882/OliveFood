@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+
+body {
+  font-family: 'Bree Serif', serif;
+  font-weight: 300;
+}
+
+/* Layout */
+header {
+ background: url("../images/bg1.jpg") no-repeat center center/cover;
+ height: 370px;
+ width: 100%;
+}
+
+@media (max-width: 350px) {
+  header {
+    height: 450px;
+  }
+}
+.container {
+ display: flex;
+ background: rgba(20, 20, 20, 0.685);
+ height: 60px;
+ color: white;
+ position: sticky;
+ width: 100%;
+ top: 0;
+ z-index: 10;
+}
+
+.logo-img {
+ width: 47px;
+ border-radius: 50px;
+ object-fit: cover;
+}
+
+.header-content {
+ text-decoration: none;
+ color: white;
+ font-size: 1.2rem;
+ margin: 1.7em;
+}
+
+a:hover {
+ color: black;
+ background-color: white;
+ border-radius: 30px;
+ padding: 0 5px;
+}
+
+.links {
+ margin-top: 20px;
+}
+
+.logo {
+ margin: 50px;
+ margin-top: 10px;
+ margin-top: 10px;
+}
+
+.slogan {
+ text-align: center;
+ color: white;
+ margin: 60px;
+}
+
+h1 {
+ margin-bottom: 0;
+ text-align: center;
+ font-size: 2.3rem;
+ font-weight: 600;
+ margin-top: 20px;
+}
+
+.slogan p {
+ margin-top: 0;
+ font-weight: 400;
+ margin-bottom: 10px;
+}
+
+.btn-order {
+ margin: 0px 4px;
+ background-color: rgba(73, 70, 70, 0.801);
+ font-family: 'Bree Serif', serif;
+ padding: 2px 15px;
+ border: rgba(255, 255, 255, 0.705) solid 1px;
+ border-radius: 10px;
+ font-size: 12px;
+ cursor: pointer;
+ color: white;
+ font-size: 0.8rem;
+ font-weight: 300;
+}
+
+@media (max-width: 910px) {
+ .container {
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+ }
+ .logo {
+  margin-bottom: 10px;
+ }
+ .header-content {
+  margin: 7px;
+  font-size: 1.03rem;
+ }
+ .links {
+  margin-top: 0;
+ }
+ .slogan {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 50px;
+ }
+ /* .slogan p{
+   font-weight: 300;
+ } */
+ h1 {
+  font-size: 1.5rem;
+ }
+ 
+}
+
+/* Our Services */
+.service-container {
+ display: flex;
+ justify-content: space-between;
+ margin: 40px;
+ margin-top: 13px;
+}
+.service-card {
+ /* object-fit: cover; */
+ width: 300px;
+ border: brown solid 2px;
+ background: #f2f2f2;
+ padding: 20px;
+ text-align: center;
+ border-radius: 25px;
+ margin: 30px;
+ margin-top: 13px;
+}
+
+.service-card img {
+  width: 200px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 910px) {
+ .service-container {
+  flex-direction: column;
+  align-items: center;
+ }
+ .service-card {
+  width: 85%;
+ }
+}
+
+/* Our clients */
+#clients-section {
+ position: relative;
+}
+#clients-section::before {
+ content: "";
+ position: absolute;
+ background: url("../images/bg.jpg") no-repeat top/cover;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.4;
+}
+
+.head-info {
+  text-align: center;
+}
+
+.clients-card {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.clients-card img {
+ width: 90px;
+ padding: 20px;
+}
+
+ @media (max-width: 910px) {
+ .clients-card img {
+   width: 80px;
+ }
+}
+
+/* ContactUS */
+.contact-section {
+  position: relative;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  background: url("../images/contact.jpg") no-repeat top/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0.9;
+}
+
+.contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+.contact-box input, 
+.contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+} 
+
+.contact-box form{
+  width: 40%;
+}
+
+.contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Bree Serif', serif;
+}
+
+.contact-btn {
+  display: block;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: white;
+  border: white solid 0.7px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 3px 10px;
+  border-radius: 7px;
+  background-color: rgb(173, 24, 24);
+}
+
+@media(max-width: 910px) {
+  .contact-box form{
+    width:80%;
+  }
+}
+
+/* Footer */
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+
+
